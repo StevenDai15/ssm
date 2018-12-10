@@ -10,6 +10,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import com.alibaba.fastjson.JSONObject;
 import com.luckydb.model.User;
 import com.luckydb.service.UserService;
 
@@ -32,11 +33,10 @@ public class UserController {
 		
 		List<User> userList = userService.readAllUser();
 		for (User user : userList) {
-			System.out.println(user.getId());
+			System.out.println(JSONObject.toJSONString(user));
 		}
 		
-		
-		return null;
+		return "userList";
 		
 	}
 

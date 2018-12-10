@@ -7,7 +7,7 @@
 		<setting name="logImpl" value="STDOUT_LOGGING" />
 	</settings>
 	<typeAliases>
-		<!-- alias的值都写类名，例如BankCard -->
-		<!-- <typeAlias type="com.duanrong.business.account.model.EntrustAccount" alias="EntrustAccount" /> -->
+		<!-- alias的值都写类名 -->
+		<typeAlias type="com.luckydb.model.User" alias="User" />
 	</typeAliases>	
 </configuration>
